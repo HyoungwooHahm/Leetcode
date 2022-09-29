@@ -49,10 +49,7 @@ class Solution:
                     
             if firstList[i][0] == secondList[j][0]:
                 if firstList[i][1] >secondList[j][1]:
-                    temp=[]
-                    temp.append(firstList[i][0])
-                    temp.append(secondList[j][1])
-                    intv.append(temp)
+                    intv.append([firstList[i][0], secondList[j][1]])
                     j+=1
                     continue
                     
