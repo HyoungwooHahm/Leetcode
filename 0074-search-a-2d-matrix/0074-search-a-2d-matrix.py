@@ -17,9 +17,9 @@ class Solution:
         while a<=z:
             mid= (a+z)//2
             if matrix[i][mid]==target:
-                return 1
+                return True
             elif matrix[i][mid]>target:
                 z = mid-1
             else:
                 a = mid+1
-        return 0
+        return False
