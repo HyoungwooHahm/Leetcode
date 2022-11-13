@@ -11,7 +11,7 @@ class Solution:
         while a <= z:
             mid = a + (z-a) // 2
             if isBadVersion(mid):
-                if isBadVersion(mid -1) == False:
+                if not isBadVersion(mid -1):
                     return mid
                 else:
                     z = mid-1
